@@ -3,99 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <style>
-        body {
-            padding: 10px 360px 100px 360px;
-            background: #2a2a2a;
-            font-family: 'Times New Roman', Times, serif;
-            color: #f1f1f1;
-            display: block;
-        }
-        .main {
-            background-color: #fca;
-            width: 700px;
-            height: 650px;
-            padding: 0;            
-        }
-    
-        .left {
-            float: left;
-            background: green;
-            display: block;
-            height: 470px;
-            padding-left: 20px;
-            padding-top: 20px;
-            width: 100px;
-        }
-        .right {
-            float: right;
-            background: #345;
-            display: block;
-            padding-left: 20px;
-            height: 490px;
-            width: 560px;
-            word-wrap: break-word;
-        }
-        .udm {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 80px;
-            bottom: 0;
-            text-align: center;
-            color: black;
-        }
-        .big {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: black;
-            text-align: center;
-            width: 100%;
-            height: 80px;
-        }
-        .lists {
-            list-style: none;
-            text-align: center;
-            padding: 0;
-            margin: 0;
-        }
-        .lists li {
-            margin-top: 10px;
-        }
-    </style>
+    <title>Ayah Website Test Tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/a18190e90b.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="main">
-        <div class="big">
-            <h1>Hu Tao</h1>
+<body class="font-[Plus_Jakarta_Sans] h-screen bg-white">
+    <header class="bg-white font-[Plus_Jakarta_Sans] border border-[#dfe1e6]">
+    <nav class="flex justify-between items-center w-[92%] py-5 px-30 mx-auto text-[14px] font-[600]">
+        <a href="">
+            <img src="samicon.png" alt="PT SAMUDERA IMAJI INSPIRA" class="w-40 h-10">
+        </a>
+        <div class="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex md:items-center md:gap-[4vh] gap-8 px-5">
+            <ul class="flex md:flex-row flex-col   items-center gap-[4vw] text-[#0D0D12]">
+                <li class="hover:text-gray-500 duration-300 cursor-pointer">Home</li>
+                <li class="hover:text-gray-500 duration-300 cursor-pointer">Main Business</li>
+                <li class="hover:text-gray-500 duration-300 cursor-pointer">Gallery</li>
+                <li class="hover:text-gray-500 duration-300 cursor-pointer">Product</li>
+                <li class="hover:text-gray-500 duration-300 cursor-pointer">About Us</li>
+            </ul>
         </div>
-        
-        <div class="bro">
-            <div class="left">
-                List
-                <ul class="lists">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+        <div class="font-[400] flex items-center gap-6">
+            <button class="bg-[#784236] text-white w-[87px] h-[40px] rounded-lg  duration-300 hover:bg-[#643024]">Product</button>
+        </div>
+    </nav>
+    </header>
+    <div class="px-35 py-24">
+    <div class="grid w-auto align-middle justify-items-center gap-8 h-auto">
+        <div class="gap-4 justify-items-center">
+            <h1 class="mb-4 text-[64px]/[120%] font-gray text-center text-gray-900 font-[500] tracking-[-0.01em]">Kisah Anda, Warisan Berharga - Kami Wujudkan dalam Tulisan</h1>
+            <p class="text-[16px]/[150%] font-[500] text-center text-gray-500 w-[840px] h-[48px]">Kami mengubah ide, kisah, dan penelitian menjadi tulisan yang bermakna. Dari buku biografi hingga pelatihan menulis, PT Samudera Imaji Inspira siap membantu Anda menginspirasi dan mengabadikan cerita.</p>
+        </div>
+        <button class="p-4 border text-[16px]/[120%] font-[600] drop-shadow-sm rounded-xl text-center border-gray-300 box-border" id="checkGallery">Check Gallery</button>
+    </div>
+    </div>
+    <div class="px-35 py-24 grid gap-5">
+        <div class="grid gap-2 py-2">
+            <hr class="border-gray-300">
+        </div>
+        <footer class="grid gap-7 py-6">
+            <div class="grid gap-3 w-173">
+                <img src="samicon.png" alt="PT. SAMUDERA IMAJI INSPIRA" class="w-40">
+                <p class="text-[14px]/[24px] text-gray-500 tracking-wide w-80">Menulis dengan Kualitas, Menginspirasi dengan Cerita, Mengabadikan dengan Makna.</p>
             </div>
-            <div class="right">
-                <h2>Hu Tao Lantern Rite 5.3 Sacrifice</h2>
-                <p>The border between life and death has been destroyed, and the Liyue cast worked together quickly to solve the problem. Hu Tao was acting very suspicious, and when the night came to fix the damaged border using the seven and eight gates method, she was at the Gate of Death. She used the Art of Homa and successfully fixed the border, but at the cost of her life. Or so she thought. When she was supposed to enter the afterlife, the traveller came and saved her, taking the brunt of the fetor for her. He ended up fainting for 2 days, before waking up and having a nice chat with Hu Tao, who now thinks of him as her hero!</p>
-                <h3>The most heartbreaking scene:</h3>
-                <img src="https://i.ytimg.com/vi/HLhBHl79CJ4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAUhGfxTAdqPBKw5tQdKoTHCz6bvA" height="180px" alt="hu tao sacrifice">
+            <div class="gap-20 flex text-[16px]/[24px]">
+                <div class="grid gap-4 w-60 font-[500] text-gray-900">
+                    <a href="">Main Business</a>
+                    <a href="">Product</a>
+                    <a href="">Gallery</a>
+                    <a href="">About Us</a>
+                    <a href="">News</a>
+                </div>
+                <div class="grid gap-3 text-gray-500">
+                    <div>Nggedabrus</div>
+                    <div>nggedabrus77</div>
+                    <div>nggedabrussss</div>
+                </div>
+                <div class="grid gap-3 text-gray-500">
+                    <div>Cluster Nice B32, Perumahan Kota Deltamas, Kabupaten Bekasi 17530</div>
+                    <div class="inline"><div class="inline p-2 border-gray-300 rounded-[3px] bg-grey-100"><i class="fa-brands fa-whatsapp bg-black p-1.5 rounded-[14px]"></i></div> 081385726665</div>
+                    <div>samuderaimajiinspira@gmail.com</div>
+                </div>
             </div>
-        </div>
-        <div class="udm">
-            <h4>Made by: Alan | GI © All Rights Reserved</h4>
-        </div>
-        
+        </footer>
     </div>
 </body>
 </html>
