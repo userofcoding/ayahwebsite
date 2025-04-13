@@ -187,6 +187,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
   .m-auto {
     margin: auto;
   }
@@ -211,8 +214,17 @@
   .table {
     display: table;
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
   }
   .h-50 {
     height: calc(var(--spacing) * 50);
@@ -222,6 +234,9 @@
   }
   .h-\[23vw\] {
     height: 23vw;
+  }
+  .h-\[32px\] {
+    height: 32px;
   }
   .h-\[40px\] {
     height: 40px;
@@ -250,8 +265,17 @@
   .min-h-\[60vh\] {
     min-height: 60vh;
   }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -270,6 +294,9 @@
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
+  }
+  .w-158 {
+    width: calc(var(--spacing) * 158);
   }
   .w-160 {
     width: calc(var(--spacing) * 160);
@@ -313,8 +340,14 @@
   .w-300 {
     width: calc(var(--spacing) * 300);
   }
+  .w-\[32px\] {
+    width: 32px;
+  }
   .w-\[49vw\] {
     width: 49vw;
+  }
+  .w-\[52\.6vw\] {
+    width: 52.6vw;
   }
   .w-\[87px\] {
     width: 87px;
@@ -333,6 +366,12 @@
   }
   .w-\[1000px\] {
     width: 1000px;
+  }
+  .w-\[1096px\] {
+    width: 1096px;
+  }
+  .w-\[1100px\] {
+    width: 1100px;
   }
   .w-\[1160px\] {
     width: 1160px;
@@ -354,6 +393,9 @@
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -379,6 +421,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -397,11 +442,20 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
   .gap-\[4vw\] {
     gap: 4vw;
+  }
+  .rounded-\[16px\] {
+    border-radius: 16px;
+  }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -422,11 +476,20 @@
   .border-\[\#DFE1E6\] {
     border-color: #DFE1E6;
   }
+  .border-\[\#FFDCD4\] {
+    border-color: #FFDCD4;
+  }
   .border-\[\#dfe1e6\] {
     border-color: #dfe1e6;
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .bg-\[\#6ba44e\] {
+    background-color: #6ba44e;
+  }
+  .bg-\[\#563746\] {
+    background-color: #563746;
   }
   .bg-\[\#784236\] {
     background-color: #784236;
@@ -436,6 +499,9 @@
   }
   .bg-\[\#F8F9FB\] {
     background-color: #F8F9FB;
+  }
+  .bg-\[\#FFDCD4\] {
+    background-color: #FFDCD4;
   }
   .bg-\[\#a46b4e\] {
     background-color: #a46b4e;
@@ -458,6 +524,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -470,6 +539,9 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -478,6 +550,9 @@
   }
   .px-35 {
     padding-inline: calc(var(--spacing) * 35);
+  }
+  .px-\[140px\] {
+    padding-inline: 140px;
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -503,6 +578,9 @@
   .pt-1\.5 {
     padding-top: calc(var(--spacing) * 1.5);
   }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
@@ -511,6 +589,10 @@
   }
   .font-\[Plus_Jakarta_Sans\] {
     font-family: Plus Jakarta Sans;
+  }
+  .text-\[12px\]\/\[160\%\] {
+    font-size: 12px;
+    line-height: 160%;
   }
   .text-\[14px\]\/\[24px\] {
     font-size: 14px;
@@ -595,6 +677,9 @@
   }
   .text-\[\#666280\] {
     color: #666280;
+  }
+  .text-\[\#784236\] {
+    color: #784236;
   }
   .text-\[\#808897\] {
     color: #808897;
